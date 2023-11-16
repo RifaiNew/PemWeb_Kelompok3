@@ -1,0 +1,280 @@
+/* #element1{
+    background-color: orange;
+}
+#element2{
+    background-color: red;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #280031;
+    margin: 0; /* Menghapus margin yang secara default diberikan oleh browser */
+}
+
+.fContainer {
+display: flex;
+width: 100%;
+background-color: #280031;
+}
+
+.wrapper {
+    position: fixed;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 1dvb;
+padding: 15px;
+width: 100%;
+background-color: #222;
+box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.brand {
+display: flex;
+flex-direction: row;
+font-size: 20px;
+padding: 15px;
+text-transform: capitalize;
+}
+
+.firstname {
+color: white;
+font-weight: 700;
+}
+
+.lastname {
+    color: crimson;
+    font-weight: 700;
+    padding-left: 4px;
+}
+
+.navigation {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.navigation> li {
+list-style-type: none;
+padding: 15px;
+}
+
+.navigation>li>a {
+color: white;
+font-size: 20px;
+text-decoration:none ;
+text-transform: capitalize;
+}
+
+.navigation>li>a:hover {
+color: crimson;
+transition: all .3s ease-in-out;
+}
+
+p{
+    color: white;
+}
+.container{
+    margin-top: 120px;
+    margin-left: 130px;
+    margin-right: 150px;
+    border-radius: 15px;
+    display: flex;
+}
+.content-left{
+    width: 55%;
+}
+
+.content-left img{
+    width: 100%;
+}
+
+.content-right{
+    border-radius: 20px;
+    border-radius: 20px;
+    background: #fff;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-left: 35px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-right img{
+    text-align: center;
+    height: 40%;
+    margin: 0 auto;
+    display: block;
+}
+
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.custom-div{
+    width: 150px;
+    height: 150px;
+    margin-left: 35px;
+    margin-top: 35px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: #f2f2f2;
+}
+
+.custom-div:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+
+.custom-div p{
+    text-align: center;
+    color: #b2bec3;
+    padding-top: 0 8px;
+}
+
+.pesan{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #b2bec3;
+    cursor: pointer;
+    height: 33%;
+    padding-top: 12px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #110f0f;
+}
+.pesan:hover{
+    background-color: #000000;
+}
+a{
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 80px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .footer-section {
+    padding: 20px;
+    flex: 1;
+    max-width: 300px;
+    min-width: 250px;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .about p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .contact span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .socials a {
+    font-size: 1.3rem;
+    margin-right: 10px;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .socials a:hover {
+    color: #29b6f6;
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links li {
+    margin-bottom: 10px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .links a:hover {
+    color: #29b6f6;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #29b6f6;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0277bd;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+  }
+
+@media only screen and (max-width: 720px) {
+  .brand{
+    font-size: 25px;
+  }
+  .content-left {
+    display: none;
+  }
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content-right{
+    margin-left: auto;
+  }
+  .navigation{
+    display: none;
+  }
+}

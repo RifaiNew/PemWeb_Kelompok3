@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #280031;
+    margin: 0; /* Menghapus margin yang secara default diberikan oleh browser */
+}
+
+a{
+  text-decoration: none;
+}
+
+.fContainer {
+display: flex;
+width: 100%;
+background-color: #280031;
+}
+
+.wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1dvb;
+    padding: 15px;
+    width: 100%;
+    background-color: #222;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.brand {
+display: flex;
+flex-direction: row;
+font-size: 20px;
+padding: 15px;
+text-transform: capitalize;
+}
+
+.firstname {
+color: white;
+font-weight: 700;
+}
+
+.lastname {
+    color: crimson;
+    font-weight: 700;
+    padding-left: 4px;
+}
+
+.navigation {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.navigation> li {
+list-style-type: none;
+padding: 15px;
+}
+
+.navigation>li>a {
+color: white;
+font-size: 20px;
+text-decoration:none ;
+text-transform: capitalize;
+}
+
+.navigation>li>a:hover {
+color: crimson;
+transition: all .3s ease-in-out;
+}
+
+
+
+.container{
+    margin-top: 120px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+table{
+  border: none;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+
+.custom-div{
+    background-color: #f9f9f9;
+    line-height: 50px;
+}
+
+.title-div{
+  line-height: 40px;
+  background-color: crimson;
+}
+
+table th{
+  text-align: left;
+}
+
+.check{
+  text-align: center;
+}
+
+.input{
+  width: 15%;
+}
+
+.aksi{
+  text-align: center;
+  width: 10%;
+}
+
+table input[type="checkbox"]{
+  margin-top: 20px;
+  width:20px;
+  height:20px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+table input[type="number"]{
+  width: 15%;
+  text-align: center;
+}
+
+table input[type="text"]{
+  width: 50%;
+}
+
+.up-content{
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+input[type="submit"]{
+  margin-top: 10px;
+  background-color: crimson;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    margin-top: 80px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .footer-section {
+    padding: 20px;
+    flex: 1;
+    max-width: 300px;
+    min-width: 250px;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .about p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .contact span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .socials a {
+    font-size: 1.3rem;
+    margin-right: 10px;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .socials a:hover {
+    color: #29b6f6;
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links li {
+    margin-bottom: 10px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .links a:hover {
+    color: #29b6f6;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #29b6f6;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0277bd;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+  }
+
+
+@media only screen and (max-width: 768px){
+  .wrapper {
+    font-size: 1.8em;
+    height: auto;
+  }
+
+  .brand {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .firstname {
+    font-size: 3.8em;
+    height: auto;
+  }
+
+  .lastname {
+    font-size: 3.8em;
+    height: auto;
+  }
+  .container{
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+  table{
+    width: auto;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px){
+
+  .brand {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .firstname {
+    font-size: 3.8em;
+    height: auto;
+  }
+
+  .lastname {
+    font-size: 3.8em;
+    height: auto;
+  }
+  table{
+    width: auto;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    text-align: center;
+  }
+  .footer-section{
+    width: auto;
+  }
+  table input[type="number"]{
+    width: 50%;
+    text-align: center;
+  }
+  table input[type="text"]{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 320px){
+
+  .brand {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .firstname {
+    font-size: 3.8em;
+    height: auto;
+  }
+
+  .lastname {
+    font-size: 3.8em;
+    height: auto;
+  }
+  table{
+    width: auto;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    text-align: center;
+  }
+  table input[type="number"]{
+    width: 15%;
+    text-align: center;
+  }
+}
+
+/* .container{
+  margin-top: 120px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+table{
+border: none;
+width: 100%;
+border-collapse: separate;
+border-spacing: 0 1em;
+}
+
+.custom-div{
+  background-color: #f9f9f9;
+  line-height: 50px;
+}
+
+.title-div{
+line-height: 40px;
+background-color: crimson;
+}
+
+table th{
+text-align: left;
+}
+
+.check{
+text-align: center;
+}
+
+.input{
+width: 15%;
+}
+
+.aksi{
+text-align: center;
+width: 10%;
+}
+
+table input[type="checkbox"]{
+margin-top: 20px;
+width:20px;
+height:20px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+}
+
+table input[type="number"]{
+width: 15%;
+text-align: center;
+}
+
+table input[type="text"]{
+width: 50%;
+}
+
+.up-content{
+font-size: 25px;
+color: white;
+text-align: center;
+}
+
+input[type="submit"]{
+margin-top: 10px;
+background-color: crimson;
+color: #fff;
+padding: 10px;
+cursor: pointer;
+border: none;
+border-radius: 3px;
+} */
